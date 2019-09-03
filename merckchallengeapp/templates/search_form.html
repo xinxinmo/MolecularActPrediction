@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+    <title>Search</title>
+  </head>
+  <body>
+    <nav class="site-header sticky-top py-1 navbar navbar-dark bg-dark">
+      <div class="container d-flex flex-column flex-md-row justify-content-between">
+       <a class="py-2" href="index">
+         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24" focusable="false"><title>Product</title><circle cx="12" cy="12" r="10"></circle><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path></svg>
+       </a>
+       <a class="py-2 d-none d-md-inline-block" href="inquiryform">Prediction</a>
+       <a class="py-2 d-none d-md-inline-block" href="searchform">Look up</a>
+       <a class="py-2 d-none d-md-inline-block" href="postform">Commit Experimental Data</a>
+       <a class="py-2 d-none d-md-inline-block" href="moreinfo">About The Project</a>
+     </div>
+    </nav>
+    <div class="container">
+      <h1 style="font-family: 'PT Sans', sans-serif;">Look up from current library</h1>
+      <form class="compound" action="/search" method="get">
+        <div class="protein-info">
+          <label for="">Protein ID</label>
+          <input type="text" class="form-control" name="p">
+          <small id="emailHelp" class="form-text text-muted">You can look up the Protein ID when you type.</small>
+
+          <label for="">Protein Name</label>
+          <input type="text" class="form-control" name="pn">
+          <br>
+        </div>
+        <div class="compound-info">
+          <label for="">Compound ID</label>
+          <input type="text" class="form-control" name="c">
+          <small id="emailHelp" class="form-text text-muted">You can look up the Compound ID when you type.</small>
+
+          <label for="">Compound Name</label>
+          <input type="text" class="form-control" name="cn">
+          <br>
+        </div>
+        <div class="submit">
+          <input type="submit" class="btn btn-primary" name="" value="Search">
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
